@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(221, 205, 123), rgb(246, 212, 238));
+}
+
+.screen {
+    background-image: linear-gradient(to right, rgb(215, 215, 255), rgb(247, 199, 199));
+    height: 88vh;
+    padding: 30px;
+    margin: 50px;
+    border-radius: 60px;
+}
+
+nav {
+    display: flex;
+    padding: 18px 0;
+    justify-content: space-around;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 18px;
+    align-items: center;
+
+}
+
+nav ul li {
+    list-style-type: none;
+
+}
+
+.hero {
+    /* background-color: red; */
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+
+}
+
+.hero-left {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.hero-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.first-line {
+    font-size: 30px;
+    color: grey;
+}
+
+
+.second-line {
+    font-size: 40px;
+}
+
+.third-line {
+    font-size: 28px;
+    color: grey;
+    width: 11ch;                /* number of characters */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid black;
+
+    font-size: 28px;
+    font-family: monospace;
+
+    animation: typing 1.4s steps(12), blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 11ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+.btn .first-btn {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(52, 47, 47);
+    color: white;
+    border-radius: 20px;
+    border: 2px solid rgb(52, 47, 47);
+    cursor: pointer;
+}
+
+.btn .first-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn .second-btn {
+    padding: 10px;
+    margin: 10px;
+    background: white;
+    color: black;
+    border-radius: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.btn .second-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
